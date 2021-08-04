@@ -17,7 +17,7 @@
 t is a module which allows you to create type definitions to check values against.
 
 ## Download
-[You can download the latest copy of t here.](https://raw.githubusercontent.com/osyrisrblx/t/master/lib/init.lua)
+[You can download the latest copy of t here.](https://raw.githubusercontent.com/osyrisrblx/t/master/src/init.lua)
 
 ## Why?
 When building large systems, it can often be difficult to find type mismatch bugs.\
@@ -47,16 +47,16 @@ foo("1", 2, 3) --> Error: Bad tuple index #3: (optional) string expected, got nu
 Check out src/t.spec.lua for a variety of good examples!
 
 ## Primitives
-|Type     |  |Member     |
-|---------|--|-----------|
-|boolean  |=>|t.boolean  |
-|thread   |=>|t.thread   |
-|function |=>|t.callback |
-|nil      |=>|t.none     |
-|number   |=>|t.number   |
-|string   |=>|t.string   |
-|table    |=>|t.table    |
-|userdata |=>|t.userdata |
+| Type     |     | Member     |
+| -------- | --- | ---------- |
+| boolean  | =>  | t.boolean  |
+| thread   | =>  | t.thread   |
+| function | =>  | t.callback |
+| nil      | =>  | t.none     |
+| number   | =>  | t.number   |
+| string   | =>  | t.string   |
+| table    | =>  | t.table    |
+| userdata | =>  | t.userdata |
 
 Any primitive can be checked with a built-in primitive function.\
 Primitives are found under the same name as their type name except for two:

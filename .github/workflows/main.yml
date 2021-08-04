@@ -33,7 +33,7 @@ jobs:
           luarocks install md5
 
       - name: Verify LuaCheck
-        run: luacheck lib
+        run: luacheck src
 
       - name: Run Tests
         run: |

@@ -4,7 +4,7 @@ table.unpack = unpack -- luacheck: ignore
 -- borrowed from Roact
 
 local LOAD_MODULES = {
-	Library = "lib",
+	Library = "src",
 	TestEZ = "modules/testez/src",
 }
 
